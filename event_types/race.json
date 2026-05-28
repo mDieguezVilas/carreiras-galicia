@@ -1,0 +1,13 @@
+{
+  "type_id": "race",
+  "description": "Carreira popular ou trail en Galicia",
+  "json_schema": {
+    "type": "object",
+    "properties": {
+      "location": {"type": "string"},
+      "distance": {"type": "string"},
+      "registration_url": {"type": "string"}
+    },
+    "required": ["location"]
+  }
+}

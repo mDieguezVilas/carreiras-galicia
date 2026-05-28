@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+carreiras_galicia.egg-info/PKG-INFO
+carreiras_galicia.egg-info/SOURCES.txt
+carreiras_galicia.egg-info/dependency_links.txt
+carreiras_galicia.egg-info/requires.txt
+carreiras_galicia.egg-info/top_level.txt
+sources/__init__.py
+sources/fga_source.py
+sources/kronotime_source.py
+sources/manual_csv_source.py

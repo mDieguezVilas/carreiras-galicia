@@ -1,0 +1,1 @@
+events-framework @ git+https://github.com/mDieguezVilas/framework.git@v0.1.1

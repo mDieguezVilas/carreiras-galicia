@@ -1,0 +1,25 @@
+storage:
+  type: sql
+  data_dir: data
+
+sources:
+  fga:
+    enabled: true
+    schedule: "0 9 * * *"
+  kronotime:
+    enabled: true
+    schedule: "0 10 * * *"
+  manual:
+    enabled: true
+    schedule: "0 11 * * *"
+
+notifications:
+  telegram:
+    enabled: true
+    token_env: TELEGRAM_TOKEN
+    chat_id_env: TELEGRAM_CHAT_ID
+  smtp:
+    enabled: false
+    summary: false
+
+sources_package: sources
