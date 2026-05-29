@@ -7,7 +7,7 @@ name = "carreiras-galicia"
 version = "0.1.0"
 requires-python = ">=3.11"
 dependencies = [
-    "events-framework @ git+https://github.com/mDieguezVilas/event-framework.git@v0.2.0",
+    "events-framework @ git+https://github.com/mDieguezVilas/events-framework.git@v0.2.0",
 ]
 
 [tool.setuptools.packages.find]
