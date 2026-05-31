@@ -6,7 +6,7 @@ sources:
   fga:
     enabled: true
     schedule: "0 9 * * *"
-  kronotime:
+  carreiras_galegas:
     enabled: true
     schedule: "0 10 * * *"
   manual:
@@ -15,7 +15,7 @@ sources:
 
 notifications:
   telegram:
-    enabled: true
+    enabled: false
     token_env: TELEGRAM_TOKEN
     chat_id_env: TELEGRAM_CHAT_ID
   smtp:

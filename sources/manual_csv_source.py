@@ -1,7 +1,7 @@
 import csv
 import logging
 from pathlib import Path
-from datetime import date
+from datetime import datetime
 from framework.models import EventPayload
 from framework.sources.base import EventSource, event_source
 
@@ -25,18 +25,16 @@ class ManualCSVSource(EventSource):
         payloads = []
         for row in raw:
             try:
-                event_date = None
-                if row.get("event_date"):
-                    event_date = date.fromisoformat(row["event_date"])
                 payloads.append(EventPayload(
                     type_="race",
                     name=row["name"],
                     url=row["url"],
                     source=self.source_id,
-                    event_date=event_date,
+                    event_date=datetime.now(),
                     data={
                         "location": row.get("location", ""),
                         "distance": row.get("distance", ""),
+                        "date_text": row.get("event_date", ""),
                     },
                 ))
             except Exception as e:
